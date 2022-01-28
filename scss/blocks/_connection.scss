@@ -1,0 +1,121 @@
+.connection{
+  margin-bottom: 240px;
+}
+
+.connection__inner{
+  background-image: url(../images/Feedback.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+.connection__left{
+  margin-right: 166px;
+}
+
+.connection__img{
+  display: block;
+}
+
+.connection__right{
+  @include width (375px);
+  margin-top: 50px;
+}
+
+.form__title{
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 62px;
+margin: 0;
+margin-bottom: 14px;
+color: #FFFFFF;
+}
+
+.form__text{
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+color: #949494;
+margin: 0;
+margin-bottom: 29px;
+}
+
+.form__input{
+  @include width (375px);
+  padding: 16px 30px 13px 22px;
+  margin-bottom: 14px;
+
+  &:focus{
+    outline: none;
+   border: 1px solid  #FFBD54;
+  }
+}
+
+.form__input::placeholder{
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+color: #949494;
+}
+
+.form__texterea{
+  @include width (375px);
+  padding: 17px 22px 20px 22px;
+  margin-bottom: 30px;
+  &:focus{
+    outline: none;
+   border: 1px solid  #FFBD54;
+  }
+}
+
+
+
+.form__texterea::placeholder{
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+
+color: #DBDBDB;
+}
+
+.form__info{
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+color: #949494;
+
+}
+
+.form__button{
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+padding: 15px 50px;
+background-color: #FFBD54;
+border: none;
+border-radius: 3px;
+
+&:hover{
+  color: #FFFFFF;
+  opacity: 0.8; ;
+}
+
+&:active{
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+}

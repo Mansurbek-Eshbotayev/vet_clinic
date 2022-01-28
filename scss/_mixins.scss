@@ -10,6 +10,11 @@
   background-color:$color ;
 }
 
+@mixin width ($width:100px,) {
+  width: 100%;
+  max-width:$width;
+}
+
 @mixin boxing ($width:400px, $height:300px, $color:red) {
   width:$width;
   height:$height ;

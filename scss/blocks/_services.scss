@@ -1,0 +1,335 @@
+.services{
+  margin-bottom: 235px;
+}
+
+.services__inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services__title{
+  width: 100%;
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 54px;
+  color: #333333;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+.our-services__list{
+  display: flex;
+  align-items: center;
+  
+  position: relative;
+  z-index: 1;
+  
+  &::before{
+    content: "";
+    width: 14px;
+    height: 25px;
+    background-image: url(../images/left.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 100px;
+    left: -35px;
+    position: absolute;
+    z-index: 3; 
+  }
+  
+  &::after{
+    content: "";
+    width: 14px;
+    height: 25px;
+    background-image: url(../../images/right.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 100px;
+    right: -35px;
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+
+.our-services__item{
+  @include width (193px);
+  background-color: #FFFFFF;
+  padding: 129px 32px 42px 35px;
+  text-align: center;
+  margin-right: 13px;
+  margin-bottom: 14px;
+  border-radius: 5px;
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+  &:active{
+    opacity: 0.6;
+  }
+}
+
+.our-services__item:nth-child(1){
+  margin: 0;
+  margin-right: 13px;
+  padding-bottom: 59px;
+}
+
+.our-services__item:nth-child(6){
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.our-services__item:nth-child(4) , .our-services__item:nth-child(6){
+  padding: 149px 32px 45px 35px;
+}
+
+.our-services__link{
+  position: relative;
+  z-index: 1;
+  
+  
+  &::before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 54px;
+    height: 77px;
+    background-image: url(../images/doctor.svg);
+    background-repeat: no-repeat;
+    bottom: 25px;
+    left: -20px;
+  }
+}
+
+.medic__link{
+  position: relative;
+  z-index: 1; 
+  
+  &::before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 61px;
+    height: 76px;
+    background-image: url(../images/girl.svg);
+    background-repeat: no-repeat;
+    bottom: 25px;
+    left: -30px;
+  }
+}
+
+.littl__link{
+  position: relative;
+  z-index: 1; 
+  
+  &::before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 72px;
+    height: 77px;
+    background-image: url(../images/ildog.svg);
+    background-repeat: no-repeat;
+    bottom: 25px;
+    left: -35px;
+  }
+}
+
+.click__link{
+  position: relative;
+  z-index: 1; 
+  
+  &::before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 75px;
+    height: 75px;
+    background-image: url(../images/dog.svg);
+    background-repeat: no-repeat;
+    bottom: 25px;
+    left: -40px;
+  }
+}
+
+.lupa__link{
+  position: relative;
+  z-index: 1; 
+  
+  &::before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 78px;
+    height: 78px;
+    background-image: url(../images/lupa.svg);
+    background-repeat: no-repeat;
+    bottom: 25px;
+    left: -40px;
+  }
+}
+
+.plas__link{
+  position: relative;
+  z-index: 1; 
+  
+  &::before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 75px;
+    height: 75px;
+    background-image: url(../images/plasdog.svg);
+    background-repeat: no-repeat;
+    bottom: 25px;
+    left: -40px;
+  }
+}
+
+.our-services__title{
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+  margin: 0;
+}
+
+
+// services__bottom
+
+.services__bottom{
+  width: 100%;
+  max-width: 1195px;
+  background-color: #FFFFFF;
+  padding: 42px 35px;
+}
+
+.inspection__inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inspection__left{
+  margin-right: 67px;
+}
+
+.inspection__right{
+  @include width (492px);
+}
+
+.about-diagnosis__title{
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 20px;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.about-diagnosis__text{
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #949494;
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.about-diagnosis__text:nth-child(odd){
+  margin-bottom: 50px;
+}
+
+.about-diagnosis__price{
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding: 15px 36px 15px 63px;
+  background-color: #FFBD54;
+  border-radius: 3px;
+  margin-right: 20px;
+  
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease; 
+  
+  &::before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 21px;
+    height: 21px;
+    background-image: url(../images/money.svg);
+    background-repeat: no-repeat;
+    top: 15px;
+    left: 30px;
+    
+  }
+
+  &:hover{
+    color: #FFBD54;
+    background-color: #333333 ;
+  }
+
+  &:active{
+    color: #FFBD54;
+    background-color: #333333 ;
+    opacity: 0.6;
+  }
+}
+
+
+.about-diagnosis__enrol{
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding: 15px 37px 15px 64px;
+  background-color: #333333;
+  border-radius: 3px;
+
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease; 
+  
+  &::before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    width: 21px;
+    height: 21px;
+    background-image: url(../images/blenk.svg);
+    background-repeat: no-repeat;
+    top: 15px;
+    left: 30px;
+  }
+
+  &:hover{
+    color: #333333;
+    background-color: #FFBD54 ;
+  }
+
+  &:active{
+    color: #333333;
+    background-color: #FFBD54 ;
+    opacity: 0.6;
+  }
+}

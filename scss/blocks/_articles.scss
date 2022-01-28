@@ -1,0 +1,163 @@
+.useful-artticles{
+  margin-bottom: 260px;
+}
+
+.articles__title{
+ 
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 20px;
+color: #333333;
+display: block;
+text-align: center;
+margin-bottom: 80px;
+}
+
+.articles__list{
+  display: flex;
+  justify-content: center;
+  align-items: center
+  
+}
+
+.useful__item{
+  @include width (305px);
+  background-color: #FEFEFE;
+}
+
+.useful__item:nth-child(2){
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.useful__img{
+  margin-bottom: 21px;
+}
+
+.useful__info{
+ padding-right: 22px;
+ padding-bottom: 35px;
+ padding-left: 30px;
+}
+
+.useful__time{
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+color: #949494;
+display: block;
+text-align: end;
+}
+
+.useful__title{
+  @include width (182px);
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 25px;
+color: #000000;
+margin: 0;
+margin-bottom: 10px;
+}
+
+.useful__text{
+  @include width (244px);
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+color: #949494;
+margin: 0;
+margin-bottom: 47px;
+}
+
+.useful__link{
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+color: #333333;
+margin-left: 15px;
+  position: relative;
+  z-index: 1;
+  
+  &::before{
+    content: "";
+    width: 23px;
+    height: 20px;
+    background-image: url(../images/pet.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 1px;
+    left: -24px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  &:hover{
+    color: #FFBD54;
+  }
+  
+  &:focus{
+    color: rgba(51, 51, 51, 0.7);;
+  }
+}
+
+.useful-info{
+  @include width (640px);
+  display: flex;
+  
+}
+
+.storis__top{
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.storis__list{
+  
+  display: flex;
+  
+}
+
+.useful-info__storis{
+  width: 100%;
+  padding: 42px 34px 37px 31px ;
+}
+
+.storis__item{
+  margin-right: 7px;
+}
+
+.storis__item:nth-child(3){
+  margin-right: 50px;
+}
+
+.storis__title{
+  margin: 0;
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: bold;
+font-size: 26px;
+line-height: 29px;
+color: #333333;
+margin-bottom: 15px;
+}
+
+.storis__text{
+  margin: 0;
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+color: #949494;
+margin-bottom: 36px;
+}

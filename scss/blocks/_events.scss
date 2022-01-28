@@ -1,0 +1,81 @@
+
+.events{
+  height: 480px;
+  background-image: url(../../images/dogdog.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.events__info{
+  position: absolute;
+  z-index: 2;
+  top: 200px;
+  left: 310px;
+}
+
+.events__title{
+  margin: 0;
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 20px;
+color: #FFFFFF;
+margin-bottom: 50px;
+}
+
+.events__input{
+  padding: 18px 147px 18px 22px;
+margin-right: 20px;
+border: none;
+border-radius: 5px;
+
+
+ &:focus{
+   outline: none;
+  border: 1px solid  #FFBD54;
+ }
+}
+
+.events__input::placeholder{
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+color: #949494;
+outline: none;
+
+
+
+}
+
+.events__button{
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+padding: 15px 52px;
+background-color: #333333;
+border-radius: 3px;
+border: none;
+transition: all 0.3s ease;
+
+&:hover{
+  color: #333333;
+  background-color: #FFBD54;
+}
+
+&:active{
+  color: #333333;
+  background-color: #FFBD54;
+  opacity: 0.6;
+}
+
+}

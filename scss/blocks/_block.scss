@@ -1,0 +1,87 @@
+.blockquota{
+  margin-bottom: 190px;
+}
+
+.blockquota__info{
+  @include width (753px);
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  
+  &::before{
+    content: "";
+    width: 47px;
+    height: 40px;
+    background-image: url(../images/two.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -25px;
+    left: -100px;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  &::after{
+    content: "";
+    width: 47px;
+    height: 40px;
+    background-image: url(../../images/one.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 35px;
+    right: -110px;
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+.blockquota__text{
+  font-family: "Futura PT";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #949494;
+  margin: 0;
+  margin-top: 40px;
+  position: relative;
+  
+  &::before{
+    content: "";
+    width: 100%;
+    max-width: 140px;
+    height: 1px;
+    background-color: #DBDBDB;
+    top: -40px;
+    left: 290px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  &::after{
+    content: "";
+    width: 100%;
+    max-width: 140px;
+    height: 1px;
+    background-color: #DBDBDB;
+    bottom: -40px;
+    left: 290px;
+    position: absolute;
+    z-index: 2;
+    
+  }
+}
+
+.blockquota__and{
+  display: block;
+  
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 26px;
+color: #333333;
+margin-top: 60px;
+}

@@ -1,0 +1,67 @@
+
+.hero{
+  height: 815px;
+  background-image: url(../images/animals.png) , url(../images/bord.png);
+  background-position: calc(50% - 480px) calc(50% - 80px) ,  calc(50% + 694px) calc(110%);
+  background-repeat: no-repeat;
+}
+
+.hero__info{
+@include width(608px);
+ margin-left: auto;
+ padding-top: 150px;
+}
+
+.hero__title{
+  margin: 0;
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: bold;
+font-size: 70px;
+line-height: 64px;
+color: #333333;
+margin-bottom: 30px;
+}
+
+.title__color{
+  color: #78C0DE;
+}
+
+.hero__wrapper{
+  @include width (495px);
+}
+
+.hero__text{
+  margin: 0;
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 21px;
+color: #949494;
+margin-bottom: 55px;
+}
+
+.hero__link{
+  font-family: "Futura PT";
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 21px;
+color: #FFFFFF;
+padding: 15px 48px;
+background-color: #333333;
+border-radius: 3px;
+transition: all 0.3s ease;
+
+&:hover{
+  color: #333333;
+  background-color: #FFBD54;
+}
+
+&:active{
+  color: #333333;
+  background-color: #FFBD54;
+  opacity: 0.6;
+}
+}
