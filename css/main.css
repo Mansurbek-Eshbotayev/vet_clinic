@@ -888,30 +888,44 @@ a {
   z-index: 1;
 }
 
-.our-services__list::before {
-  content: "";
-  width: 14px;
-  height: 25px;
-  background-image: url(../images/left.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  top: 100px;
-  left: -35px;
-  position: absolute;
-  z-index: 3;
+.our-services {
+  position: relative;
+  z-index: 1;
 }
 
-.our-services__list::after {
-  content: "";
-  width: 14px;
-  height: 25px;
-  background-image: url(../../images/right.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  top: 100px;
-  right: -35px;
+.our-services__button {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
   position: absolute;
   z-index: 2;
+  top: 92px;
+  left: -54px;
+  right: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.our-services__button:hover {
+  background-color: #FFFFFF;
+  border-radius: 3px;
+}
+
+.our-services__button:active {
+  opacity: 0.6;
+}
+
+.our-services__button:nth-child(2) {
+  position: absolute;
+  z-index: 3;
+  top: 92px;
+  left: 101%;
+}
+
+.button__img {
+  width: 14px;
+  height: 25px;
 }
 
 .our-services__item {
@@ -976,7 +990,7 @@ a {
   z-index: 2;
   width: 61px;
   height: 76px;
-  background-image: url(../../images/girl.svg);
+  background-image: url(../images/girl.svg);
   background-repeat: no-repeat;
   bottom: 25px;
   left: -30px;
@@ -1010,7 +1024,7 @@ a {
   z-index: 2;
   width: 75px;
   height: 75px;
-  background-image: url(../../images/dog.svg);
+  background-image: url(../images/dog.svg);
   background-repeat: no-repeat;
   bottom: 25px;
   left: -40px;
@@ -1044,7 +1058,7 @@ a {
   z-index: 2;
   width: 75px;
   height: 75px;
-  background-image: url(../../images/plasdog.svg);
+  background-image: url(../images/plasdog.svg);
   background-repeat: no-repeat;
   bottom: 25px;
   left: -40px;

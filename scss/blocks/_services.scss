@@ -29,31 +29,73 @@
   position: relative;
   z-index: 1;
   
-  &::before{
-    content: "";
-    width: 14px;
-    height: 25px;
-    background-image: url(../images/left.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    top: 100px;
-    left: -35px;
-    position: absolute;
-    z-index: 3; 
-  }
+  // &::before{
+  //   content: "";
+  //   width: 14px;
+  //   height: 25px;
+  //   background-image: url(../images/left.svg);
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   top: 100px;
+  //   left: -35px;
+  //   position: absolute;
+  //   z-index: 3; 
+  // }
   
-  &::after{
-    content: "";
-    width: 14px;
-    height: 25px;
-    background-image: url(../../images/right.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    top: 100px;
-    right: -35px;
-    position: absolute;
-    z-index: 2;
+  // &::after{
+  //   content: "";
+  //   width: 14px;
+  //   height: 25px;
+  //   background-image: url(../../images/right.svg);
+  //   background-size: contain;
+  //   background-repeat: no-repeat;
+  //   top: 100px;
+  //   right: -35px;
+  //   position: absolute;
+  //   z-index: 2;
+  // }
+
+  
+}
+
+.our-services{
+  position: relative;
+  z-index: 1;
+}
+
+.our-services__button{
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
+  position: absolute;
+  z-index: 2;
+  top: 92px;
+  left: -54px;
+  right: 0;
+  transition: all 0.2s ease;
+
+  &:hover{
+    background-color: #FFFFFF;
+    border-radius: 3px;
   }
+
+  &:active{
+    opacity: 0.6;
+  }
+
+}
+
+.our-services__button:nth-child(2){
+  position: absolute;
+  z-index: 3;
+  top: 92px;
+    left: 101%;
+}
+
+.button__img{
+  width: 14px;
+  height: 25px;
 }
 
 
